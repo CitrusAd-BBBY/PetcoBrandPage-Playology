@@ -43,18 +43,26 @@
 	}
 
 	/* Elanco brand page */
-	.brand-page-section{
+	.playology-section{
 		display: block;
 	}
 
-	.brand-page-section .container{
+	.bplayology-section .container{
 		max-width: 1440px;
 		margin: 0 auto;
 	}
 
-	.brand-page-section .container-fluid{
+	.playology-section .container-fluid{
 		width: 100%;
 	}
+
+	.custom-flex{
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.section-title{
 		color : #00205b;
 		font-family: "PetcoCircularTT-Bold", arial !important;
@@ -62,6 +70,65 @@
 		padding : 46px 0 30px;
 		text-align: center;
 		font-weight: 600;
+	}
+
+	.playology-section__slider{
+		background: #000;
+	}
+
+	.playology-section__slider--wrapper{
+		padding: 0 5%;
+	}
+
+	.playology-section__slider--content{
+		
+	}
+
+	.playology-section__slider--content .col{
+		width: 50%;
+	}
+
+	.playology-section__slider--content .col .slider-text{
+		padding : 0 0 0 40px;
+		max-width: 250px;
+		text-align: left;
+	}
+
+	.playology-section__slider--content .col .slider-text__eyebrow{
+		max-width: 210px;
+	}
+
+	.playology-section__slider--content .col .slider-text__headline{
+		color : #fff;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 35px;
+		font-weight: 600;
+		padding : 50px 0 20px;
+	}
+
+	.playology-section__slider--content .col .slider-text__subhead{
+		color : #fcec00;
+		font-family: "PetcoCircularTT-Regular", arial !important;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 25px;
+	}
+
+	.playology-section__slider--content .col:first-child{
+		background-image: url("images/POV_1-left-tech-Graphic.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin: 0 0 -5px;
+		padding-left: 12%;
+	}
+
+	.playology-section__slider--content .col:last-child{
+		background-image: url("images/POV_1-right-tech-Graphic.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		padding: 5% 0;
+		background-position: right;
+		padding-right: 12%;
 	}
 
 
@@ -112,16 +179,22 @@
 
 	<!-- *** Playology brand page ***  -->
 	<div class="playology-section">
-		<!-- Top hero -->
-		<div class="playology-section__top-hero container-fluid">
-			<div class="playology-section__top-hero--content container">
-				<div class="col">
-					<h1>Playology page initiated</h1>
+		<!-- Slider section -->
+		<div class="playology-section__slider container-fluid">
+			<div class="playology-section__slider--wrapper">
+				<div class="playology-section__slider--content custom-flex">
+					<div class="col">
+						<img src="images/POV_1_dog_image.png" alt="Playology. Toys that make scents to dogs. Dog noses are more powerful than humans’. Toys have what dogs crave most, scent." />
+					</div>
+					<div class="col">
+						<div class="slider-text">
+							<div class="slider-text__eyebrow"><img src="images/Playology White Logo.png" alt="Playology logo" /></div>
+							<div class="slider-text__headline">TOYS THAT MAKE SCENTS TO DOGS®</div>
+							<div class="slider-text__subhead">A dog’s nose is 10,000x more powerful than a human nose. Playology® toys are designed with what dogs crave most—scent!</div>
+						</div>
+					</div>
+					
 				</div>
-				<div class="col">
-
-				</div>
-				
 			</div>
 		</div>
 
