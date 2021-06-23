@@ -80,10 +80,6 @@
 		padding: 0 5%;
 	}
 
-	.playology-section__slider--content{
-		
-	}
-
 	.playology-section__slider--content .col{
 		width: 50%;
 	}
@@ -119,16 +115,15 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		margin: 0 0 -5px;
-		padding-left: 12%;
+		padding-left: 11%;
 	}
 
 	.playology-section__slider--content .col:last-child{
 		background-image: url("images/POV_1-right-tech-Graphic.png");
 		background-size: contain;
 		background-repeat: no-repeat;
-		padding: 5% 0;
 		background-position: right;
-		padding-right: 12%;
+		padding-right: 11%;
 	}
 
 
@@ -139,19 +134,107 @@
 		display: none;
 	}
 
-	@media screen and (min-width: 1024px) and (max-width: 1200px) {
+	@media screen and (min-width: 1024px) and (max-width: 1279px) {
 
+		/* Slider section */
+		.playology-section__slider--content .col .slider-text{
+			max-width: 350px;
+		}
+
+		.playology-section__slider--content .col .slider-text__headline{
+			padding : 40px 0 15px;
+		}
+
+		.playology-section__slider--content .col:last-child{
+			padding-right: 8%;
+		}
 
 	}
+
 	@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+		/* Slider section */
+		.playology-section__slider--wrapper {
+			padding: 0 3% 0 5%;
+		}
+		.playology-section__slider--content .col .slider-text{
+			max-width: 350px;
+			padding : 0 0 0 30px;
+		}
+
+		.playology-section__slider--content .col .slider-text__eyebrow {
+			max-width: 170px;
+		}
+
+		.playology-section__slider--content .col .slider-text__headline{
+			padding : 40px 0 15px;
+			font-size: 30px;
+		}
+
+		.playology-section__slider--content .col .slider-text__subhead{
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		.playology-section__slider--content .col:last-child{
+			padding-right: 0%;
+		}
 
 	}
 	@media screen and (max-width: 767px) {
+
 		.m-hide {
 		display: none;
 		}
+
 		.d-hide{
 			display: block;
+		}
+
+		.custom-flex{
+			flex-wrap: wrap;
+		}
+
+
+		/* Slider section */
+		.playology-section__slider--wrapper {
+			padding: 0;
+		}
+
+		.playology-section__slider--content .col {
+			width : 100%;
+			
+		}
+
+		.playology-section__slider--content .col .slider-text{
+			max-width: 260px;
+			padding : 0;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.playology-section__slider--content .col .slider-text__eyebrow {
+			max-width: 150px;
+			margin: 0 auto;
+		}
+
+		.playology-section__slider--content .col .slider-text__headline{
+			padding : 15px 0;
+			font-size: 35px;
+		}
+
+		.playology-section__slider--content .col .slider-text__subhead{
+			font-size: 16px;
+			line-height: 25px;
+		}
+
+		.playology-section__slider--content .col:first-child{
+			padding-left: 0%;
+		}
+
+		.playology-section__slider--content .col:last-child{
+			padding : 20px 0;
+			background-image: unset;
 		}
 
 
@@ -189,8 +272,8 @@
 					<div class="col">
 						<div class="slider-text">
 							<div class="slider-text__eyebrow"><img src="images/Playology White Logo.png" alt="Playology logo" /></div>
-							<div class="slider-text__headline">TOYS THAT MAKE SCENTS TO DOGS®</div>
-							<div class="slider-text__subhead">A dog’s nose is 10,000x more powerful than a human nose. Playology® toys are designed with what dogs crave most—scent!</div>
+							<div class="slider-text__headline">TOYS THAT MAKE SCENTS TO DOGS<sup>&reg;</sup></div>
+							<div class="slider-text__subhead">A dog’s nose is 10,000x more powerful than a human nose. Playology<sup>&reg;</sup> toys are designed with what dogs crave most—scent!</div>
 						</div>
 					</div>
 					
