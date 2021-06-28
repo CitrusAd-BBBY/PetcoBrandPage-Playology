@@ -241,10 +241,14 @@
 	/* Embeded Section*/
 	.playology-section__embeded{
 		background : #fcfbfc;
+		padding-bottom: 40px;
+		margin: 0 auto 50px !important;
 	}
 	.playology-section__embeded--content .col .single-item{
 		text-align: center;
 		padding: 16px;
+		max-width: 280px;
+		margin: 0 auto;
 	}
 
 	.playology-section__embeded--content .col .single-item__img{
@@ -265,6 +269,43 @@
 		font-family: "PetcoCircularTT-Regular", arial !important;
 		font-weight: 500;
 		font-size: 16px;	
+	}
+
+	/* Bottom Hero Section*/
+	.playology-section__bottom-hero{
+		background-image: url("images/bottom_mod.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 740px;
+		background-position: center;
+	}
+
+	.playology-section__bottom-hero--content{
+		justify-content: flex-end;
+	}
+
+	.playology-section__bottom-hero--content .col{
+		width: 60%;
+	}
+
+	.playology-section__bottom-hero--content .col .single-item{
+		text-align: center;
+		padding : 50px 30px 30px;
+		max-width: 480px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.playology-section__bottom-hero--content .col .single-item .single-item__logo{
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.playology-section__bottom-hero--content .col .single-item .single-item__headline{
+		color: #fcec00;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-weight: 600;
+		font-size: 35px;	
 	}
 
 
@@ -512,6 +553,39 @@
 		}
 
 
+		/* Bottom Hero Section*/
+		.playology-section__bottom-hero{
+			background : #000;
+			height: auto;
+			padding: 150px 0 0;
+		}
+
+		.playology-section__bottom-hero--content{
+			background-image: url("images/mobile-bot.png");
+			background-size: contain;
+			background-position: left;
+			background-repeat: no-repeat;
+		}
+
+		.playology-section__bottom-hero--content .col{
+			width: 100%;
+		}
+
+		.playology-section__bottom-hero--content .col .single-item{
+			padding: 50px 15px 30px;
+		}
+
+		.playology-section__bottom-hero--content .col .single-item .single-item__logo {
+			margin: -150px auto 0;
+			padding-bottom: 150px;
+		}
+
+		.playology-section__bottom-hero--content .col .single-item .single-item__headline {
+			font-size: 25px;
+			padding: 235px 0 0;
+		}
+
+
 
 	}
 	@media screen and (max-width: 480px) {
@@ -525,7 +599,10 @@
 	}
 
 	@media screen and (max-width: 320px) {
-
+		.playology-section__bottom-hero--content .col .single-item .single-item__headline {
+			padding: 180px 0 0;
+			font-size: 21px;
+		}
 	}
 
 	
@@ -680,6 +757,20 @@
 						</div>
 					</div>
 					
+				</div>
+			</div>
+		</div>
+
+		<!-- Bottom Hero Section -->
+		<div class="playology-section__bottom-hero container-fluid">
+			<div class="playology-section__bottom-hero--wrapper container">
+				<div class="playology-section__bottom-hero--content custom-flex">
+					<div class="col">
+						<div class="single-item">
+							<div class="single-item__logo"><img src="images/playology-logo.png" alt="" /></div>
+							<div class="single-item__headline">Safe, scented, treat-free toys for a smarter way to play.</div>
+						</div>
+					</div>					
 				</div>
 			</div>
 		</div>
