@@ -143,6 +143,89 @@
 		padding-right: 11%;
 	}
 
+
+	/* Sliders options */
+	.slider{
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		position: relative;
+	}
+	
+	.slides{
+		width : 200%;
+		display: flex;
+	}
+
+	.slides input{
+		display: none;
+	}
+
+	.slide{
+		min-width : 100%;
+		transition: 2s;
+	}
+
+	/* Manual navigation */
+	.navigation-manual{
+		position: absolute;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		bottom: 20px;
+	}
+
+	.manual-btn{
+		border : 2px solid #40d3dc;
+		padding : 5px;
+		border-radius: 10px;
+		cursor: pointer;
+		transition: 1s;
+
+	}
+
+	.manual-btn:not(:last-child){
+		margin-right: 20px;
+	}
+
+	.manual-btn:hover{
+		background : #40d3dc;
+	}
+
+	#radio1:checked ~ .first{
+		margin-left : 0;
+	}
+	#radio2:checked ~ .first{
+		margin-left : -100%;
+	}
+
+	.navigation-auto{
+		position: absolute;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		bottom: 20px;
+	}
+
+	.navigation-auto div{
+		border : 2px solid #40d3dc;
+		padding: 5px;
+		border-radius: 10px;
+		transition: 1s;
+	}
+
+	.navigation-auto div:not(:last-child){
+		margin-right: 20px;
+	}
+
+	#radio1:checked ~ .navigation-auto .auto-btn1{
+		background: #40d3dc;
+	}
+	#radio2:checked ~ .navigation-auto .auto-btn2{
+		background: #40d3dc;
+	}
+
 	/* Popular Toys */
 	.playology-section__popular-toys--content .col .single-item{
 		text-align: center;
@@ -445,7 +528,7 @@
 		}
 
 		.playology-section__slider--content .col:last-child{
-			padding : 20px 0;
+			padding: 20px 0 40px;
 			background-image: unset;
 		}
 
@@ -622,21 +705,58 @@
 	<!-- *** Playology brand page ***  -->
 	<div class="playology-section">
 		<!-- Slider section -->
-		<div class="playology-section__slider container-fluid">
-			<div class="playology-section__slider--wrapper">
-				<div class="playology-section__slider--content custom-flex">
-					<div class="col">
-						<img src="images/POV_1_dog_image.png" alt="Playology logo. Abstract outlines of chromosomes. Husky plays with blue Playology stick outside in the grass." />
-					</div>
-					<div class="col">
-						<div class="slider-text">
-							<div class="slider-text__eyebrow"><img src="images/Playology White Logo.png" alt="Playology logo" /></div>
-							<div class="slider-text__headline">TOYS THAT MAKE SCENTS TO DOGS<sup>&reg;</sup></div>
-							<div class="slider-text__subhead">A dog’s nose is 10,000x more powerful than a human nose. Playology<sup>&reg;</sup> toys are designed with what dogs crave most—scent!</div>
+		<div class="playology-section__slider container-fluid slider">
+			<div class="playology-section__slider--wrapper slides">
+				<div class="slider">
+					<div class="slides">
+
+						<!-- Radio buttons -->
+						<input type="radio" name="radio-btn" id="radio1">
+						<input type="radio" name="radio-btn" id="radio2">
+
+						<div class="playology-section__slider--content custom-flex slide first">
+							<div class="col">
+								<img src="images/POV_1_dog_image.png" alt="Playology logo. Abstract outlines of chromosomes. Husky plays with blue Playology stick outside in the grass." />
+							</div>
+							<div class="col">
+								<div class="slider-text">
+									<div class="slider-text__eyebrow"><img src="images/Playology White Logo.png" alt="Playology logo" /></div>
+									<div class="slider-text__headline">TOYS THAT MAKE SCENTS TO DOGS<sup>&reg;</sup></div>
+									<div class="slider-text__subhead">A dog’s nose is 10,000x more powerful than a human nose. Playology<sup>&reg;</sup> toys are designed with what dogs crave most—scent!</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="playology-section__slider--content custom-flex slide">
+							<div class="col">
+								<img src="images/POV_2_dog_image.png" alt="Playology logo. Abstract outlines of chromosomes. Husky plays with blue Playology stick outside in the grass." />
+							</div>
+							<div class="col">
+								<div class="slider-text">
+									<div class="slider-text__eyebrow"><img src="images/Playology White Logo.png" alt="Playology logo" /></div>
+									<div class="slider-text__headline">TOYS THAT MAKE SCENTS TO DOGS<sup>&reg;</sup></div>
+									<div class="slider-text__subhead">A dog’s nose is 10,000x more powerful than a human nose. Playology<sup>&reg;</sup> toys are designed with what dogs crave most—scent!</div>
+								</div>
+							</div>
+							
+						</div>
+						<!-- Auto navigation -->
+						<div class="navigation-auto">
+							<div class="auto-btn1"></div>
+							<div class="auto-btn2"></div>
+						</div>  
+						<div class="navigation-manual">
+							<label for="radio1" class="manual-btn"></label>
+							<label for="radio2" class="manual-btn"></label>
 						</div>
 					</div>
-					
+					<!-- Manual navigation -->
+					<div class="navigation-manual" style="display: none;">
+						<label for="radio1" class="manual-btn"></label>
+						<label for="radio2" class="manual-btn"></label>
+					</div>
 				</div>
+
 			</div>
 		</div>
 
@@ -783,5 +903,19 @@
 		</div>
 
 	</div>
+
+	<!-- Slider scripts -->
+
+	<script type="text/javascript">
+		let counter = 1;
+		setInterval(function(){
+			document.getElementById('radio' + counter).checked = true;
+			counter++;
+			if(counter > 2){
+				counter = 1;
+			}
+		}, 5000);
+	</script>
+
 </body>
 </html>
