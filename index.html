@@ -227,17 +227,25 @@
 	}
 
 	/* Popular Toys */
+	.playology-section__popular-toys--content{
+		align-items: flex-start;
+	}
+
 	.playology-section__popular-toys--content .col .single-item{
 		text-align: center;
 		padding: 16px;
 	}
 
-	.playology-section__popular-toys--content .col .single-item__headline{
+	.playology-section__popular-toys--content .col .single-item__headline a{
 		padding: 40px 0;
 		color: #001952;
 		font-family: "PetcoCircularTT-Bold", arial !important;
 		font-weight: 600;
-		font-size: 21px;	
+		font-size: 21px;
+		text-decoration: none;
+		display: block;
+		min-height: 50px;
+		cursor: pointer;
 	}
 
 	/* Two columns - Carousel & Feature image */
@@ -253,6 +261,14 @@
 		align-items: center;
 		justify-content: space-around;
 		padding : 40px 15px;
+		position: relative;
+	}
+
+	.playology-section__two-columns--content .col .item-wrapper__right-arrow{
+		width : 70px;
+		position: absolute;
+    	right: 10px;
+		cursor: pointer;
 	}
 
 	.playology-section__two-columns--content .col .item-wrapper .single-item{
@@ -327,6 +343,30 @@
 		padding-bottom: 40px;
 		margin: 0 auto 50px !important;
 	}
+
+	.playology-section__embeded--content{
+		align-items: flex-start;
+	}
+
+	.playology-section__embeded{
+		position: relative;
+	}
+
+	.playology-section__embeded .left-arrow, .playology-section__embeded .right-arrow{
+		width : 20px;
+		position: absolute;
+		top: 60%;
+		cursor : pointer
+	}
+
+	.playology-section__embeded .left-arrow{
+		opacity : 0.7;
+	}
+
+	.playology-section__embeded .right-arrow{
+		right: 0;
+	}
+
 	.playology-section__embeded--content .col .single-item{
 		text-align: center;
 		padding: 16px;
@@ -344,7 +384,8 @@
 		color: #000;
 		font-family: "PetcoCircularTT-Bold", arial !important;
 		font-weight: 600;
-		font-size: 25px;	
+		font-size: 25px;
+		min-height: 60px;	
 	}
 
 	.playology-section__embeded--content .col .single-item__subhead{
@@ -767,30 +808,30 @@
 				<div class="playology-section__popular-toys--content custom-flex">
 					<div class="col">
 						<div class="single-item">
-							<div class="single-item__img"><img src="images/Playology-Chew-Ball.png" alt="" /></div>
-							<div class="single-item__headline">Squeaky Chew Ball</div>
-							<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a></div>
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:1:squeakychewball:image" onclick="clickTrackLink(this);"><img src="images/Playology-Chew-Ball.png" alt="" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:1:squeakychewball:headline" onclick="clickTrackLink(this);">Squeaky Chew Ball</a></div>
+							<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:1:squeakychewball:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 						</div>
 					</div>
 					<div class="col">
 						<div class="single-item">
-							<div class="single-item__img"><img src="images/Playology-Dual-Layer-Bone.png" alt="" /></div>
-							<div class="single-item__headline">Dual Layer Bone</div>
-							<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a></div>
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:2:duallayerbone:image" onclick="clickTrackLink(this);"><img src="images/Playology-Dual-Layer-Bone.png" alt="" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:2:duallayerbone:headline" onclick="clickTrackLink(this);">Dual Layer Bone</a></div>
+							<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:2:duallayerbone:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 						</div>
 					</div>
 					<div class="col">
 						<div class="single-item">
-							<div class="single-item__img"><img src="images/Playology Squeaky Stick.png" alt="" /></div>
-							<div class="single-item__headline">Squeaky Chew Stick</div>
-							<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a></div>
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:3:squeakychewstick:image" onclick="clickTrackLink(this);"><img src="images/Playology Squeaky Stick.png" alt="" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:3:squeakychewstick:headline" onclick="clickTrackLink(this);">Squeaky Chew Stick</a></div>
+							<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:3:squeakychewstick:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 						</div>
 					</div>
 					<div class="col">
 						<div class="single-item">
-							<div class="single-item__img"><img src="images/Playology-Dual-Layer-Ring.png" alt="" /></div>
-							<div class="single-item__headline">Dual Layer Ring</div>
-							<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a></div>
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:2:duallayerrign:image" onclick="clickTrackLink(this);"><img src="images/Playology-Dual-Layer-Ring.png" alt="" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:2:duallayerrign:headline" onclick="clickTrackLink(this);">Dual Layer Ring</a></div>
+							<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:featuredproducts:2:duallayerrign:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 						</div>
 					</div>
 					
@@ -817,6 +858,7 @@
 								<div class="single-item__headline">Playology Squeaky Chew Ball Dog Toy Beef Scent</div>
 								<div class="single-item__cta cta-underline"><a href="">Shop Now</a></div>
 							</div>
+							<div class="item-wrapper__right-arrow m-hide"><img src="images/rightarrow.png" /></div>
 						</div>
 						<div class="disclaimer m-hide">*Based on a study of average engagement conducted at the Purdue University School of Veterinary Medicine.</div>
 					</div>
@@ -850,6 +892,7 @@
 								<div class="single-item__headline">Playology Dri-Tech Dental Rope Dog Toy Pork Sausage Scent</div>
 								<div class="single-item__cta cta-underline"><a href="">Shop Now</a></div>
 							</div>
+							<div class="item-wrapper__right-arrow m-hide"><img src="images/rightarrow.png" /></div>
 						</div>
 					</div>
 				</div>
@@ -860,6 +903,7 @@
 		<!-- Embeded Section -->
 		<div class="playology-section__embeded container">
 			<div class="section-title">Embedded with all-natural scent for a smarter way to play</div>
+			<div class="left-arrow d-hide"><img src="images/leftarrow-mobile.png" /></div>
 			<div class="playology-section__embeded--wrapper">
 				<div class="playology-section__embeded--content custom-flex">
 					<div class="col">
@@ -883,9 +927,9 @@
 							<div class="single-item__subhead">All Playology toys are made of high-quality materials and designed to appeal to different types of chewers.</div>
 						</div>
 					</div>
-					
 				</div>
 			</div>
+			<div class="right-arrow d-hide"><img src="images/rightarrow-mobile.png" /></div>
 		</div>
 
 		<!-- Bottom Hero Section -->
@@ -912,7 +956,7 @@
 			document.getElementById('radio' + counter).checked = true;
 			counter++;
 			if(counter > 2){
-				counter = 1;
+				counter = 2;
 			}
 		}, 5000);
 	</script>
