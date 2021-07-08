@@ -288,6 +288,15 @@
 		bottom: 40%;
 	}
 
+	.playology-section__two-columns--content .col .item-wrapper__left-arrow{
+		width : 60px;
+		position: absolute;
+    	left: 10px;
+		cursor: pointer;
+		bottom: 40%;
+		z-index: 1;
+	}
+
 	.playology-section__two-columns--content .col .item-wrapper .single-item{
 		width: 50%;
 		padding: 0 15px;
@@ -627,20 +636,8 @@
 			order : unset;
 		}
 
-		.playology-section__two-columns--content .col .item-wrapper{
-			padding: 40px 15px;
-		}
-
-		#seniorDog .item-wrapper .single-item{
-			min-width: 50%;
-		}
-
-		#seniorDog .item-wrapper .single-item .single-item__img{
-			max-width: 50%;
-		}
-
-		#seniorDog .item-wrapper .single-item .single-item__headline{
-			max-width: 70%;
+		.playology-section__two-columns--content #seniorDog .item-wrapper{
+			width : 600%;
 		}
 
 
@@ -672,6 +669,7 @@
 		.playology-section__two-columns--content .col .img-caption span{
 			display: block;
 			text-align: center;
+			max-width: 145px;
 		}
 
 		.playology-section__two-columns--content .col:first-child{
@@ -686,16 +684,25 @@
 			width: 900%;
 			display: flex;
 			align-items: center;
-			padding-left: 15px;
+			padding: 40px 30px;
 		}
 
+		.playology-section__two-columns--content .col .item-wrapper__left-arrow{
+			width : 40px;
+			left : 40px;
+		}
+
+		.playology-section__two-columns--content .col .item-wrapper__right-arrow{
+			width : 40px;
+			right : 5px;
+		}
 
 		.playology-section__two-columns--content .col .feature-img{
 			padding-left: 15px;
 		}
 
 		.playology-section__two-columns--content .col .item-wrapper .single-item__img {
-			max-width: 80%;
+			max-width: 90%;
 			height: 140px;
 		}
 
@@ -714,8 +721,12 @@
 		}
 
 		.playology-section__embeded--content{
-			width: 255%;
+			width: 300%;
 			flex-wrap: nowrap;
+		}
+
+		.playology-section__embeded--content .col{
+			width : 100%;
 		}
 
 		.playology-section__embeded--content .col .single-item{
@@ -887,62 +898,64 @@
 		<!-- Two columns - Carousel & Feature image -->
 
 		<!-- Two columns desktop -->
-		<div class="playology-section__two-columns container padding-40 m-hide">
+		<div class="playology-section__two-columns container">
 			<div class="section-title">Toys that keep your dog engaged 7x longer than unscented toys*</div>
 			<div class="playology-section__two-columns--wrapper">
 				<div class="playology-section__two-columns--content custom-flex">
 					<div class="col">
 						<div class="feature-headline m-hide">Chew, sniff, repeat</div>
 						<div class="feature-subhead m-hide">All-natural scents like peanut butter, chicken and beef are released as your dog chews.</div>
+						
 						<div class="wrapper-container">
+							<div class="item-wrapper__left-arrow" id="leftArrow1"><img src="images/leftarrow.png" /></div>
 							<div class="item-wrapper">
 								<div class="single-item carousel1">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dual Layer Bone Dog Toy Beef Scent.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/1.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoychickenscent:headline" onclick="clickTrackLink(this);">Playology Dual Layer Bone Dog Toy Beef Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoychickenscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel1">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Squeaky Chew Ball Dog Toy Beef Scent.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/2.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoychickenscent:headline" onclick="clickTrackLink(this);">Playology Squeaky Chew Ball Dog Toy Beef Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoychickenscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel1">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dual Layer Bone Dog Toy Peanut Butter Scent.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/3.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoychickenscent:headline" onclick="clickTrackLink(this);">Playology Dual Layer Bone Dog Toy Peanut Butter Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoychickenscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel1">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dualayerringdogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology-Dri-Tech-Rope-Dog-Toy-Beef-Scent.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dualayerringdogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/4.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dualayerringdogtoychickenscent:headline" onclick="clickTrackLink(this);">Playology Dri-Tech Rope Dog Toy Beef Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dualayerringdogtoychickenscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel1">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dual Layer Ring Dog Toy Chicken Scent.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/5.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoybeefscent:headline" onclick="clickTrackLink(this);">Playology Dual Layer Ring Dog Toy Chicken Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoybeefscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel1">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Squeaky Chew Ball Dog Toy Chicken Scent.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/6.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoybeefscent:headline" onclick="clickTrackLink(this);">Playology Squeaky Chew Ball Dog Toy Chicken Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoybeefscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel1">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dual Layer Bone Dog Toy Chicken Scent.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/7.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoybeefscent:headline" onclick="clickTrackLink(this);">Playology Dual Layer Bone Dog Toy Chicken Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoybeefscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel1">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringdogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dri-Tech Rope Dog Toy Chicken Scent.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringdogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/8.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringdogtoybeefscent:headline" onclick="clickTrackLink(this);">Playology Dri-Tech Rope Dog Toy Chicken Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringdogtoybeefscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel1">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewpeanutbutterballdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dual Layer Ring Dog Toy Beef Scent,.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewpeanutbutterballdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/9.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewpeanutbutterballdogtoy:headline" onclick="clickTrackLink(this);">Playology Dual Layer Ring Dog Toy Beef Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewpeanutbutterballdogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 							</div>
-							<div class="item-wrapper__right-arrow m-hide" id="rightArrow1"><img src="images/rightarrow.png" /></div>
+							<div class="item-wrapper__right-arrow" id="rightArrow1"><img src="images/rightarrow.png" /></div>
 						</div>
 						
 						<div class="disclaimer m-hide">*Based on a study of average engagement conducted at the Purdue University School of Veterinary Medicine.</div>
@@ -956,7 +969,7 @@
 			</div>
 		</div>
 
-		<div class="playology-section__two-columns container padding-40 m-hide">
+		<div class="playology-section__two-columns container">
 			<div class="playology-section__two-columns--wrapper">
 				<div class="playology-section__two-columns--content custom-flex row-bottom">
 					<div class="col">
@@ -967,165 +980,47 @@
 						<div class="feature-headline m-hide">Toys scientifically designed for senior dogs</div>
 						<div class="feature-subhead m-hide">Playology Silver toys combine scents with softer materials for more comfortable play as they (and their teeth) age.</div>
 						<div class="wrapper-container" id="seniorDog">
+							<div class="item-wrapper__left-arrow" id="leftArrow2"><img src="images/leftarrow.png" /></div>
 							<div class="item-wrapper">
 								<div class="single-item carousel2">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechpeanutbutterropedogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Pork Sausage Scent Dental Chew Stick Dog Toy.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechpeanutbutterropedogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/10.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechpeanutbutterropedogtoy:headline" onclick="clickTrackLink(this);">Playology Dental Chew Stick Dog Toy Pork Sausage Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechpeanutbutterropedogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel2">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoypeanutbutterscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Dri-Tech Pork Sausage Scent Dental Rope Dog Toy.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoypeanutbutterscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/11.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoypeanutbutterscent:headline" onclick="clickTrackLink(this);">Playology Dri-Tech Dental Rope Dog Toy Pork Sausage Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoypeanutbutterscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel2">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringpeanutbutterdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Dri-Tech Peanut Butter Scent Dental Rope Dog Toy.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringpeanutbutterdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/12.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringpeanutbutterdogtoy:headline" onclick="clickTrackLink(this);">Playology Dri-Tech Dental Rope Dog Toy Peanut Butter Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringpeanutbutterdogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel2">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:pebblechewpeanutbutterdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Pork Sausage Scent Dental Chew Dog Toy.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:pebblechewpeanutbutterdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/13.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:pebblechewpeanutbutterdogtoy:headline" onclick="clickTrackLink(this);">Playology Dental Chew Dog Toy Pork Sausage Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:pebblechewpeanutbutterdogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel2">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakybaconscentchewballdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Peanut Butter Scent Dental Chew Stick Dog Toy.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakybaconscentchewballdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/14.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakybaconscentchewballdogtoy:headline" onclick="clickTrackLink(this);">Playology Dental Chew Stick Dog Toy Peanut Butter Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakybaconscentchewballdogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 								<div class="single-item carousel2">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:baconscentdritechropedogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Peanut Butter Scent Dental Chew Dog Toy.png" alt="" /></a></div>
+									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:baconscentdritechropedogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/15.png" alt="" /></a></div>
 									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:baconscentdritechropedogtoy:headline" onclick="clickTrackLink(this);">Playology Dental Chew Dog Toy Peanut Butter Scent</a></div>
 									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:baconscentdritechropedogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
 								</div>
 							</div>
 						</div>
-						<div class="item-wrapper__right-arrow m-hide" id="rightArrow2"><img src="images/rightarrow.png" /></div>
+						<div class="item-wrapper__right-arrow" id="rightArrow2"><img src="images/rightarrow.png" /></div>
 					</div>
 				</div>
 				<div class="disclaimer d-hide">*Based on a study of average engagement conducted at the Purdue University School of Veterinary Medicine</div>
 			</div>
 		</div>
 
-		<!-- Two columns mobile -->
-		<div class="playology-section__two-columns container padding-40 d-hide">
-			<div class="section-title">Toys that keep your dog engaged 7x longer than unscented toys*</div>
-			<div class="playology-section__two-columns--wrapper">
-				<div class="playology-section__two-columns--content custom-flex">
-					<div class="col">
-						<div class="feature-headline m-hide">Chew, sniff, repeat</div>
-						<div class="feature-subhead m-hide">All-natural scents like peanut butter, chicken and beef are released as your dog chews.</div>
-						<div id="twoColumnMobile">
-							<div class="item-wrapper">
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dual Layer Bone Dog Toy Beef Scent.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoychickenscent:headline" onclick="clickTrackLink(this);">Playology Dual Layer Bone Dog Toy Beef Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoychickenscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Squeaky Chew Ball Dog Toy Beef Scent.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoychickenscent:headline" onclick="clickTrackLink(this);">Playology Squeaky Chew Ball Dog Toy Beef Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoychickenscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dual Layer Bone Dog Toy Peanut Butter Scent.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoychickenscent:headline" onclick="clickTrackLink(this);">Playology Dual Layer Bone Dog Toy Peanut Butter Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoychickenscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dualayerringdogtoychickenscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology-Dri-Tech-Rope-Dog-Toy-Beef-Scent.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dualayerringdogtoychickenscent:headline" onclick="clickTrackLink(this);">Playology Dri-Tech Rope Dog Toy Beef Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dualayerringdogtoychickenscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dual Layer Ring Dog Toy Chicken Scent.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoybeefscent:headline" onclick="clickTrackLink(this);">Playology Dual Layer Ring Dog Toy Chicken Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoybeefscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Squeaky Chew Ball Dog Toy Chicken Scent.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoybeefscent:headline" onclick="clickTrackLink(this);">Playology Squeaky Chew Ball Dog Toy Chicken Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechropedogtoybeefscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dual Layer Bone Dog Toy Chicken Scent.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoybeefscent:headline" onclick="clickTrackLink(this);">Playology Dual Layer Bone Dog Toy Chicken Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewballdogtoybeefscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringdogtoybeefscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dri-Tech Rope Dog Toy Chicken Scent.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringdogtoybeefscent:headline" onclick="clickTrackLink(this);">Playology Dri-Tech Rope Dog Toy Chicken Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringdogtoybeefscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewpeanutbutterballdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Chew_Sniff_repeat/Playology Dual Layer Ring Dog Toy Beef Scent,.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewpeanutbutterballdogtoy:headline" onclick="clickTrackLink(this);">Playology Dual Layer Ring Dog Toy Beef Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakychewpeanutbutterballdogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="item-wrapper__right-arrow m-hide"><img src="images/rightarrow.png" /></div>
-						<div class="disclaimer m-hide">*Based on a study of average engagement conducted at the Purdue University School of Veterinary Medicine.</div>
-					</div>
-
-					<div class="col">
-						<img class="feature-img" src="images/Playology_PeanutButter_DualLayerRing.png" alt="Chew, sniff, repeat. Medium-sized dog walks with a blue Playology chew ring in its mouth." />
-						<div class="img-caption d-hide"><span>Chew, sniff, repeat</span></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="playology-section__two-columns container padding-40 d-hide">
-			<div class="playology-section__two-columns--wrapper">
-				<div class="playology-section__two-columns--content custom-flex row-bottom">
-					<div class="col">
-						<img class="feature-img" src="images/Playology_Beef_SqueakyChewStick.jpg copy.png" alt="Toys designed for senior dogs. Older dog plays with Playology bone" />
-						<div class="img-caption d-hide"><span>Toys designed for senior dogs</span></div>
-					</div>
-					<div class="col">
-						<div class="feature-headline m-hide">Toys scientifically designed for senior dogs</div>
-						<div class="feature-subhead m-hide">Playology Silver toys combine scents with softer materials for more comfortable play as they (and their teeth) age.</div>
-						<div id="seniorDog">
-							<div class="item-wrapper">
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechpeanutbutterropedogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Pork Sausage Scent Dental Chew Stick Dog Toy.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechpeanutbutterropedogtoy:headline" onclick="clickTrackLink(this);">Playology Dental Chew Stick Dog Toy Pork Sausage Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:dritechpeanutbutterropedogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoypeanutbutterscent:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Dri-Tech Pork Sausage Scent Dental Rope Dog Toy.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoypeanutbutterscent:headline" onclick="clickTrackLink(this);">Playology Dri-Tech Dental Rope Dog Toy Pork Sausage Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerbonedogtoypeanutbutterscent:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringpeanutbutterdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Dri-Tech Peanut Butter Scent Dental Rope Dog Toy.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringpeanutbutterdogtoy:headline" onclick="clickTrackLink(this);">Playology Dri-Tech Dental Rope Dog Toy Peanut Butter Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:duallayerringpeanutbutterdogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:pebblechewpeanutbutterdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Pork Sausage Scent Dental Chew Dog Toy.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:pebblechewpeanutbutterdogtoy:headline" onclick="clickTrackLink(this);">Playology Dental Chew Dog Toy Pork Sausage Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:pebblechewpeanutbutterdogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakybaconscentchewballdogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Peanut Butter Scent Dental Chew Stick Dog Toy.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakybaconscentchewballdogtoy:headline" onclick="clickTrackLink(this);">Playology Dental Chew Stick Dog Toy Peanut Butter Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:squeakybaconscentchewballdogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-								<div class="single-item">
-									<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:baconscentdritechropedogtoy:image" onclick="clickTrackLink(this);"><img src="images/playology_Senior/Playology Peanut Butter Scent Dental Chew Dog Toy.png" alt="" /></a></div>
-									<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:baconscentdritechropedogtoy:headline" onclick="clickTrackLink(this);">Playology Dental Chew Dog Toy Peanut Butter Scent</a></div>
-									<div class="single-item__cta cta-underline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:playology:contentmod:1:baconscentdritechropedogtoy:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="item-wrapper__right-arrow m-hide"><img src="images/rightarrow.png" /></div>
-					</div>
-				</div>
-				<div class="disclaimer d-hide">*Based on a study of average engagement conducted at the Purdue University School of Veterinary Medicine</div>
-			</div>
-		</div>
 
 		<!-- Embeded Section -->
 		<div class="playology-section__embeded container">
@@ -1181,9 +1076,9 @@
 		let counter = 1;
 		setInterval(function(){
 			document.getElementById('radio' + counter).checked = true;
-			
-			if(counter < 2){
-				counter++;
+			counter++;
+			if(counter > 2){
+				counter = 1;
 			}
 		}, 5000);
 
@@ -1191,13 +1086,13 @@
 		// Carousel 1
 		let carousel1 = document.getElementsByClassName('carousel1');
 		let x = 0;
-		// document.getElementById('leftArrow1').onclick = () => {
-		// 	x++;
-		// 	for (let i of carousel1) {
-		// 		i.style.left = '-' + (x * (240/11)) + "%";
-		// 	}
-		// 	reset();
-		// }
+		document.getElementById('leftArrow1').onclick = () => {
+			x++;
+			for (let i of carousel1) {
+				i.style.left = '-' + (x * (100/9)) + "%";
+			}
+			reset();
+		}
 
 		document.getElementById('rightArrow1').onclick = () => {
 			x--;
@@ -1216,13 +1111,13 @@
 		// Carousel 2
 		let carousel2 = document.getElementsByClassName('carousel2');
 		let y = 0;
-		// document.getElementById('leftArrow2').onclick = () => {
-		// 	y++;
-		// 	for (let i of carousel2) {
-		// 		i.style.left = '-' + (y * (240/11)) + "%";
-		// 	}
-		// 	reset();
-		// }
+		document.getElementById('leftArrow2').onclick = () => {
+			y++;
+			for (let i of carousel2) {
+				i.style.left = '-' + (y * (100/6)) + "%";
+			}
+			reset();
+		}
 
 		document.getElementById('rightArrow2').onclick = () => {
 			y--;
@@ -1259,7 +1154,7 @@
 		}
 
 		function reset() {
-			if (z > 3 || z < - 1 ) {
+			if (z > 2 || z < - 1 ) {
 				z = 0;
 			}
 		}
